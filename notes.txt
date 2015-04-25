@@ -1,0 +1,2 @@
+Options for grid styles
+1) review use of block grid using UL an LI
