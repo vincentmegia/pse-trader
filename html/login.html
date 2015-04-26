@@ -1,56 +1,123 @@
 <!doctype html>
 <html class="no-js" lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/foundation.css" />
-    <link rel="stylesheet" href="../css/debug.css1"/>
-    <script src="js/vendor/modernizr.js"></script>
-</head>
-<body>
-
-<div class="row">
-    <div class="small-12 small-text-center columns">
-        <h1>Welcome to Foundation</h1>
-    </div>
-</div>
-<div class="row">
-    <div class="small-12 columns">
-        <!--div class="row">
-            <div class="small-1 columns">test</div>
-            <div class="small-1 columns">test</div>
-            <div class="small-1 columns">test</div>
-            <div class="small-1 columns">test</div>
-            <div class="small-1 columns">test</div>
-            <div class="small-1 columns">test</div>
-            <div class="small-1 columns">test</div>
-            <div class="small-1 columns">test</div>
-            <div class="small-1 columns">test</div>
-            <div class="small-1 columns">test</div>
-            <div class="small-1 columns">test</div>
-            <div class="small-1 columns">test</div>
-        </div-->
-        <div class="row">
-            <div class="small-1 small-offset-4 small-text-right columns"><label>Username</label></div>
-            <div class="small-4 columns">
-                <input type="text"/>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../semantic-ui/semantic.css" />
+        <link rel="stylesheet" href="../css/debug.css1"/>
+    </head>
+    <body>
+        <div class="ui centered grid">
+            <div class="fourteen column centered row">
+                <h3 class="ui header">
+                    <img CLASS="ui medium image" src="../images/COLWHITE.png"/>
+                    <div class="content">
+                        <div class="sub header">Live feed goes here...</div>
+                    </div>
+                </h3>
+                    <!--div class="row">
+                        <div class="ui labels">
+                            <div class="eleven wide column">
+                                <a class="ui label">PSEI 7,947.25</a>
+                                <a class="ui label">ALL</a>
+                                <a class="ui label">FINANCIALS</a>
+                                <a class="ui label">INDUSTRIALS</a>
+                                <a class="ui label">HOLDINGS</a>
+                                <a class="ui label">PRO</a>
+                                <a class="ui label">SERVICES</a>
+                                <a class="ui label">MINING AND OIL</a>
+                                <a class="ui label">TRADES</a>
+                                <a class="ui label">VALUE</a>
+                                <a class="ui label">Market</a>
+                            </div>
+                        </div>
+                        <div class="ui labels">
+                            <a class="ui label">0.70% 55.20</a>
+                            <a class="ui label">0.63%</a>
+                            <a class="ui label">0.52%</a>
+                            <a class="ui label">0.79%</a>
+                            <a class="ui label">0.88%</a>
+                            <a class="ui label">-0.05%</a>
+                            <a class="ui label">0.73%</a>
+                            <a class="ui label">0.11%</a>
+                            <a class="ui label">43,053</a>
+                            <a class="ui label">9,488,101,361</a>
+                            <a class="ui label">Closed...</a>
+                        </div>
+                    </div-->
             </div>
-            <div class="small-3 columns"><span/></div>
-        </div>
-        <div class="row">
-            <div class="small-1 small-offset-4 small-text-right columns"><label>Password</label></div>
-            <div class="small-4 columns">
-                <input type="text"/>
+            <div class="thirteen column row">
+                <div class="column"></div>
+                <div class="column">
+                    <div class="ui small label">
+                        PSEI 7,947.25
+                        <div class="detail">0.70% 55.20</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui small label">
+                        ALL
+                        <div class="detail">0.63%</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui small label">
+                        FINANCIAL
+                        <div class="detail">0.52%</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui small label">
+                        INDUSTRIAL
+                        <div class="detail">-0.79%</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui small label">
+                        HOLDING
+                        <div class="detail">0.88%</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui small label">
+                        PRO
+                        <div class="detail">-0.05%</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui small label">
+                        SERVICES
+                        <div class="detail">43,053</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui small label">
+                        MINING AND OIL
+                        <div class="detail">0.11%</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui small label">
+                        TRADES
+                        <div class="detail">0.11%</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui small label">
+                        VALUE
+                        <div class="detail">9,488,101,361</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui small label">
+                        Market
+                        <div class="detail">Closed...</div>
+                    </div>
+                </div>
+                <div class="column"></div>
             </div>
-            <div class="small-3 columns"><span/></div>
         </div>
-    </div>
-</div>
-
-<script src="js/vendor/jquery.js"></script>
-<script src="js/foundation.min.js"></script>
-<script>
-    $(document).foundation();
-</script>
-</body>
+        <div class="ui bottom attached label">Footer</div>
+        <script src="../semantic-ui/semantic.js"></script>
+    </body>
 </html>

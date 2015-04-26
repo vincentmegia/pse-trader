@@ -1,2 +1,22 @@
 Options for grid styles
 1) review use of block grid using UL an LI
+
+
+
+
+<div class="row">
+                <div class="ui labels">
+                    <a class="ui label">PSEI 7,947.25</a>
+                    <a class="ui label">ALL</a>
+                    <a class="ui label">FINANCIALS</a>
+                    <a class="ui label">INDUSTRIALS</a>
+                    <a class="ui label">HOLDINGS</a>
+                    <a class="ui label">PRO</a>
+                    <a class="ui label">SERVICES</a>
+                    <a class="ui label">MINING AND OIL</a>
+                    <a class="ui label">TRADES</a>
+                    <a class="ui label">VALUE</a>
+                    <a class="ui label">Market</a>
+                </div>
+
+            </div>
