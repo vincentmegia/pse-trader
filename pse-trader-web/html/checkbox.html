@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../semantic-ui/semantic.css" />
+        <link rel="stylesheet" href="../css/debug.css1"/>
+    </head>
+    <body>
+        <div ng-app="pseTrader">
+            <div class="ui centered grid" ng-controller="CheckboxController as checkbox">
+                <div class="two column row">
+                    <div class="sixteen wide column">
+                        <div class="four wide column">
+                            <div class="ui checkbox">
+                                <input type="checkbox" id="check.all" ng-click="checkbox.checkAll(checkbox.violations)" ng-model="checkbox.isCheckAll">
+                                <label for="check.all">All</label>
+                            </div>
+                        </div>
+                        <div class="four wide column" ng-repeat="violation in checkbox.violations">
+                            <div class="ui checkbox">
+                                <input type="checkbox" id="{{violation.id}}" ng-click="addCheck(violations)" ng-model="violation.checked">
+                                <label for="{{violation.id}}">{{violation.description}}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui button" ng-click="checkbox.addCollection()">Add something</div>
+                <div class="ui button" ng-click="checkbox.updateCollection()">Change something</div>
+            </div>
+
+        </div>
+        <script type="application/javascript" src="../libraries/angular.js"></script>
+        <script type="application/javascript" src="../scripts/application.js"></script>
+        <script type="application/javascript" src="../scripts/controllers/checkbox-controller.js"></script>
+    </body>
+</html>
