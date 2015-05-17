@@ -1,46 +1,67 @@
-application.controller("checkbox", function($scope) {
-    $scope.violations = [
-        { id: 1, description: "some data1", checked: false },
-        { id: 2, description: "some data2", checked: false },
-        { id: 3, description: "some data3", checked: false }
-    ];
-    $scope.isCheckAll = false;
-    console.log($scope.violations);
+(function() {
+    'use strict';
 
-    /*$scope.$watch("violations", function(newValue){
-        var checkCount = 0;
-        angular.forEach(newValue, function(violation){
-            if (violation.checked)
-                checkCount++;
-        })
-        if (checkCount == newValue.length)
-            $scope.isCheckAll = true;
-        else
-            $scope.isCheckAll = false;
-    }, true);*/
-    $scope.addCheck = function(violations) {
-        var checkCount = 0;
-        angular.forEach(violations, function(violation){
-            if (violation.checked)
-                checkCount++;
-        })
-        if (checkCount == violations.length)
-            $scope.isCheckAll = true;
-        else
-            $scope.isCheckAll = false;
-    }
+    angular
+        .module("pseTrader")
+        .controller("CheckboxController", CheckboxController);
 
-    $scope.addCollection = function() {
-        $scope.violations.push({ id: 4, description: "some data4", checked: false });
-    }
+    /**
+     *
+     * @constructor
+     */
+    function CheckboxController() {
+        var instance = this;
+        instance.addCheck = addCheck;
+        instance.addCollection = addCollection;
+        instance.updateCollection = updateCollection;
+        instance.checkAll = checkAll;
+        instance.violations = [
+            {id: 1, description: "some data1", checked: false},
+            {id: 2, description: "some data2", checked: false},
+            {id: 3, description: "some data3", checked: false}
+        ];
+        instance.isCheckAll = false;
 
-    $scope.updateCollection = function() {
-        $scope.violations[0].checked = true;
-    }
+        console.log(instance.violations);
 
-    $scope.checkAll = function(violations) {
-        angular.forEach(violations, function(violation){
-           violation.checked = $scope.isCheckAll;
-        });
+        /**
+         *
+         * @param violations
+         */
+        function addCheck(violations) {
+            var checkCount = 0;
+            angular.forEach(violations, function (violation) {
+                if (violation.checked)
+                    checkCount++;
+            });
+            if (checkCount == violations.length)
+                instance.isCheckAll = true;
+            else
+                instance.isCheckAll = false;
+        }
+
+        /**
+         *
+         */
+        function addCollection() {
+            instance.violations.push({id: 4, description: "some data4", checked: false});
+        }
+
+        /**
+         *
+         */
+        function updateCollection () {
+            this.violations[0].checked = true;
+        }
+
+        /**
+         * 
+         * @param violations
+         */
+        function checkAll(violations) {
+            angular.forEach(violations, function (violation) {
+                violation.checked = instance.isCheckAll;
+            });
+        }
     }
-});
+})();
