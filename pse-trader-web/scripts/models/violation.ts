@@ -1,4 +1,4 @@
-module pseTrader.Models {
+module pseTrader.models {
     "use strict";
 
     export class Violation {

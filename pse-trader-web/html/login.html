@@ -1,37 +1,18 @@
-<!doctype html>
-<html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../semantic-ui/semantic.css" />
-        <link rel="stylesheet" href="../css/debug.css1"/>
-    </head>
-    <body>
-        <div ng-app="pseTrader" ng-controller="loginController as login">
-            <div class="ui centered grid">
-            <div class="fourteen column centered row" ng-include="'header.html'"><!-- header --></div>
-            <div class="thirteen column row" ng-include="'sector.html'"><!-- sectors --></div>
-            <div class="fourteen column centered row"><!-- tabs -->
-                <div class="fourteen wide column">
-                    <!--div class="ui top attached tabular menu"-->
-                    <div ng-include="'primary-tab.html'"></div>
-                    <div ng-include="'secondary-tab.html'"></div>
-                    <div ng-include="'tertiary-tab.html'"></div>
-                    <div ng-include="'profile.html'"></div>
-                    <div class="one column row"><br/></div><!-- row spacer for now-->
-                    <div ng-include="'research.html'"></div>
-                    <div ng-include="'announcement.html'"></div><!--latest research-->
-                    <div ng-include="'news.html'"></div><!--PSE news-->
-                </div>
+<div ng-controller="loginController as login">
+    <div class="ui centered grid">
+        <div class="thirteen column row" ng-include="'sector.html'"><!-- sectors --></div>
+        <div class="fourteen column centered row"><!-- tabs -->
+            <div class="fourteen wide column">
+                <!--div class="ui top attached tabular menu"-->
+                <div ng-include="'primary-tab.html'"></div>
+                <div ng-include="'secondary-tab.html'"></div>
+                <div ng-include="'tertiary-tab.html'"></div>
+                <div ng-include="'profile.html'"></div>
+                <div class="one column row"><br/></div><!-- row spacer for now-->
+                <div ng-include="'research.html'"></div>
+                <div ng-include="'announcement.html'"></div><!--latest research-->
+                <div ng-include="'news.html'"></div><!--PSE news-->
             </div>
         </div>
-        </div>
-        <!--div class="ui bottom attached label">Footer</div-->
-        <script src="../libraries/jquery-2.1.4.min.js"></script>
-        <script src="../semantic-ui/semantic.js"></script>
-        <script type="application/javascript" src="../libraries/angular.js"></script>
-        <script type="application/javascript" src="../scripts/application.js"></script>
-        <script type="application/javascript" src="../scripts/application.module.js"></script>
-        <script type="application/javascript" src="../scripts/controllers/login-controller.js"></script>
-    </body>
-</html>
+    </div>
+</div>

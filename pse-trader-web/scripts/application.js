@@ -1,4 +1,4 @@
-/// <reference path="../libraries/angular.d.ts"/>
+/// <reference path="../libraries/angularjs/angular.d.ts"/>
 var pseTrader;
 (function (pseTrader) {
     "use strict";

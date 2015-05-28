@@ -3,30 +3,32 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../semantic-ui/semantic.css" />
+    <link rel="stylesheet" href="../libraries/semantic-ui/semantic.css" />
     <link rel="stylesheet" href="../css/debug.css1"/>
 </head>
 <body>
     <div ng-app="pseTrader">
         <div ng-controller="mainController as main">
             <div class="ui grid">
-                <div class="three wide centered column row">
-                    <div class="fourteen column centered row" ng-include="'header.html'"><!-- header --></div>
+                <div class="sixteen column row">
+                    <div class="three wide centered column row">
+                        <div ng-include="'header.html'"><!-- header --></div>
+                    </div>
                 </div>
-                <div class="one wide column row">
-                    <!-- dynamic content -->
+                <div class="sixteen column row">
+                    <div ng-include="'login.html'"></div>
                 </div>
-                <div class="one wide column row">
-                    <!-- footer -->
+                <div class="sixteen green column row">
                 </div>
             </div>
         </div>
     </div>
-    <script src="../libraries/jquery-2.1.4.min.js"></script>
-    <script src="../semantic-ui/semantic.js"></script>
-    <script type="application/javascript" src="../libraries/angular.js"></script>
+    <script type="application/javascript" src="../libraries/jquery/jquery/jquery-2.1.4.min.js"></script>
+    <script type="application/javascript" src="../libraries/semantic-ui/semantic.js"></script>
+    <script type="application/javascript" src="../libraries/angularjs/angular.js"></script>
     <script type="application/javascript" src="../scripts/application.js"></script>
     <script type="application/javascript" src="../scripts/application.module.js"></script>
     <script type="application/javascript" src="../scripts/controllers/main-controller.js"></script>
+    <script type="application/javascript" src="../scripts/controllers/login-controller.js"></script>
 </body>
 </html>

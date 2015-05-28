@@ -1,6 +1,6 @@
-/// <reference path="../../libraries/angular.d.ts"/>
+/// <reference path="../../libraries/angularjs/angular.d.ts"/>
 /// <reference path="../models/violation.ts"/>
-module pseTrader.Controllers {
+module pseTrader.controllers {
     "use strict";
 
 
@@ -16,4 +16,4 @@ module pseTrader.Controllers {
 };
 angular
     .module("pseTrader")
-    .controller("loginController", pseTrader.Controllers.LoginController);
+    .controller("loginController", pseTrader.controllers.LoginController);

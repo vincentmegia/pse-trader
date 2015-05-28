@@ -1,10 +1,10 @@
-/// <reference path="../../libraries/angular.d.ts"/>
+/// <reference path="../../libraries/angularjs/angular.d.ts"/>
 /// <reference path="../models/violation.ts"/>
-module pseTrader.Controllers {
+module pseTrader.controllers {
     "use strict";
 
 
-    import Violation = pseTrader.Models.Violation;
+    import Violation = pseTrader.models.Violation;
 
     /**
      *
@@ -72,4 +72,4 @@ module pseTrader.Controllers {
 };
 angular
     .module("pseTrader")
-    .controller("checkboxController", pseTrader.Controllers.CheckboxController);
+    .controller("checkboxController", pseTrader.controllers.CheckboxController);
